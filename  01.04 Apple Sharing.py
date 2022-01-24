@@ -1,0 +1,8 @@
+y = input("Number of Students: ")
+x = input("Number of Apples: ")
+firstnumber = int(y)
+secondnumber = int(x)
+total = (int) (secondnumber / firstnumber)
+remainder = (int) (secondnumber % firstnumber)
+print (total)
+print (remainder)
