@@ -1,0 +1,8 @@
+x = int(input("Enter first 2 digit number: "))
+y = int(input("Enter second 2 digit number: "))
+firstonesplace = (x%10)
+secondonesplace = (y%10)
+firsttensplace = int(x/10)
+secondtensplace = int(y/10)
+mergednumber = str(firsttensplace)+str(secondtensplace)+str(firstonesplace)+str(secondonesplace)
+print ("Merged Number: {}".format(mergednumber))
