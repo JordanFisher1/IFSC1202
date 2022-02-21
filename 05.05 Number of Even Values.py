@@ -1,9 +1,7 @@
-list1 = [10, 24, 4, 45, 66, 93]
-num = 0
- 
-# using while loop
-while(num < len(list1)):
- 
-    # checking condition
-    if list1[num] % 2 == 0:
-        print(list1[num], end=" ")
+a = int(input("Enter Number (zero to quit):"))
+b =int(input("Enter Number (zero to quit):"))
+c = int(input("Enter Number (zero to quit):"))
+d = int(input("Enter Number (zero to quit):"))
+if (a//2 == 0):
+    total = 2
+print(total)
