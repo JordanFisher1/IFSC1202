@@ -7,7 +7,7 @@ def RemoveNewLine(s):
     return s.replace("\n", "")
 def trim(s):
     s = s.strip()
-    return "".join(s.split())
+    return s
 def FirstName(s):
     s=trim(s)
     last = s.find(" ")
@@ -22,10 +22,10 @@ def MiddleName(s):
     last = s.rfind(" ")
     return s[first + 1: last]
 def main():
-    file = open("07.11 Names.txt", "r")
-    names = file.readlines()
-    print("{:<10} {:<10} {:<10}".format("First", "Middle", "Last"))
-    print("{:<10} {:<10} {:<10}".format("----------", "----------", "----------"))
+    namesfile = open("07.11 Names.txt","r")
+    names = namesfile.readlines()
+    print("{:10s} {:10s} {:10s}".format("First", "Middle", "Last"))
+    print("{:>10s} {:>10s} {:>10s}".format("----------", "----------", "----------"))
     for name in names:
         name = RemoveNewLine(name)
         name = trim(name)
@@ -35,4 +35,5 @@ def main():
         firstName = ProperCase(firstName)
         middleName = ProperCase(middleName)
         lastName = ProperCase(lastName)
-        print("{:<10} {:<10} {:<10}".format(firstName,middleName,lastName))
+        print("{:<10s} {:<10s} {:<10s}".format(firstName,middleName,lastName))
+main()
