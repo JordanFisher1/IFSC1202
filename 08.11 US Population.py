@@ -7,7 +7,7 @@ for i in file:
 file.close()
 for i in range(41):
     if(i>=1):
-        change = listpopulation[i]-listpopulation[i-1]
+        change = round(listpopulation[i]-listpopulation[i-1],2)
         listchange.append(change)
         percentchange = round(((change)/(listpopulation[i-1]))*100,2)
         listpercent.append(percentchange)
@@ -20,7 +20,7 @@ for year in range(1950,1991):
         print(year,"\t\t",listpopulation[j],"\t\t",listchange[j],"\t",str(listpercent[j])+"%")
     j+=1
 average = sum(listchange)/41
-print("Average population change:",change)
+print("Average change:",change)
 maxi = listchange[1]
 mini = listchange[1]
 maxindex = 0
